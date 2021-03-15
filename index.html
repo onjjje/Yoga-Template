@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/fd9272c9a1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
-    <title>Yoga</title>
+    <title>Yoga - Home</title>
 </head>
 
 <body>
@@ -16,16 +18,16 @@
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/logo.png" alt="Yoga">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
@@ -42,7 +44,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item bttn-hover">
                             <a class="nav-link" href="#">Start Your Free Trial</a>
                         </li>
                     </ul>
@@ -54,6 +56,7 @@
     <section class="slider">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <!-- first slide  -->
                 <div class="carousel-item active">
                     <img src="assets/images/header/home/girl.png" class="d-block w-100" alt="be happy">
                     <div class="carousel-caption d-none d-md-block">
@@ -62,14 +65,25 @@
                         <h5>Be Infinity</h5>
                     </div>
                 </div>
+                <!-- second and more slide  -->
+                <!-- <div class="carousel-item">
+                    <img src="assets/images/header/home/girl.png" class="d-block w-100" alt="be happy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Be Happy</h5>
+                        <h5>Be Healthy</h5>
+                        <h5>Be Infinity</h5>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
     <!-- about  -->
     <section class="about">
+        <div class="about-top-bg"></div>
         <div class="container">
             <div class="row">
-                <div class="col align-self-center">
+                <!-- left col  -->
+                <div class="col align-self-end">
                     <h2>Everyone's Yoga</h2>
                     <p>We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. We believe that yoga should be accessible to everyone and our classes are designed to give
                         you an in-studio experience, at an affordable price, in your own home.
@@ -77,42 +91,58 @@
                     <!-- video  -->
                     <div id="video_holder">
                         <div id="overlay"></div>
-                        <video id="video" src="assets/video/home/Cathy-Madeo-Yoga-Promo.mp4" tabindex="0" width="570px" height="auto" poster="assets/video/home/home.png"></video>
+                        <video id="video" src="assets/video/home/Cathy-Madeo-Yoga-Promo.mp4" tabindex="0" poster="assets/video/home/home.png"></video>
                     </div>
                     <!-- end  -->
                 </div>
+                <!-- right col  -->
                 <div class="col align-self-start">
                     <div class="container">
                         <div class="row">
-                            <div class="col-2">
-                                <img src="assets/images/about/icon-1.png" alt="balance">
+                            <div class="about-item">
+                                <div class="about-item-ico">
+                                    <img src="assets/images/about/icon-1.png" alt="balance">
+                                </div>
+                                <div class="about-item-content">
+                                    <h4>Balance Body & Mind</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                                </div>
                             </div>
-                            <div class="col-10">
-                                Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.
+                            <div class="about-item">
+                                <div class="about-item-ico">
+                                    <img src="assets/images/about/icon-2.png" alt="weight">
+                                </div>
+                                <div class="about-item-content">
+                                    <h4>Weight Loss</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <img src="assets/images/about/icon-2.png" alt="weight">
+                            <div class="about-item">
+                                <div class="about-item-ico">
+                                    <img src="assets/images/about/icon-3.png" alt="meditation">
+                                </div>
+                                <div class="about-item-content">
+                                    <h4>Meditation Practice</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                                </div>
                             </div>
-                            <div class="col-10">
-                                Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.
+                            <div class="about-item">
+                                <div class="about-item-ico">
+                                    <img src="assets/images/about/icon-4.png" alt="freedom">
+                                </div>
+                                <div class="about-item-content">
+                                    <h4>Yoga is a way to freedom</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <img src="assets/images/about/icon-3.png" alt="meditation">
-                            </div>
-                            <div class="col-10">
-                                Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.
-                            </div>
-                            <div class="col-2">
-                                <img src="assets/images/about/icon-4.png" alt="freedom">
-                            </div>
-                            <div class="col-10">
-                                Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.
-                            </div>
-                            <div class="col-2">
-                                <img src="assets/images/about/icon-5.png" alt="energy">
-                            </div>
-                            <div class="col-10">
-                                Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.
+                            <div class="about-item">
+                                <div class="about-item-ico">
+                                    <img src="assets/images/about/icon-5.png" alt="energy">
+                                </div>
+                                <div class="about-item-content">
+                                    <h4>Increased energy</h4>
+                                    <p>Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been industry's standard.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,7 +151,7 @@
     </section>
     <!-- classes  -->
     <section class="classes">
-        <img src="assets/logo-title.png" alt="title">
+        <img class="classes-title-ico" src="assets/logo-title.png" alt="title">
         <h2>Our Classes</h2>
         <div class="container">
             <div class="row">
@@ -129,7 +159,7 @@
                     <img src="assets/images/classes/prew-1.png" alt="beginners">
                     <h4>Seated and Supine Poses for Beginners</h4>
                     <p><i class="far fa-clock"></i><span>7:00 am - 11:00 am</span></p>
-                    <p><i class="fas fa-user"></i> <span>Simon Park</span></p>
+                    <p><i class="fas fa-user"></i><span>Simon Park</span></p>
                     <p><i class="fas fa-level-up-alt"></i>Advanced</p>
                     <p>Welcome to part 5 of our beginner series with Simon Park!</p>
                 </div>
@@ -137,7 +167,7 @@
                     <img src="assets/images/classes/prew-2.png" alt="compass">
                     <h4>SWork Towards Compass Pose</h4>
                     <p><i class="far fa-clock"></i><span>7:00 am - 11:00 am</span></p>
-                    <p><i class="fas fa-user"></i> <span>Simon Park</span></p>
+                    <p><i class="fas fa-user"></i><span>Simon Park</span></p>
                     <p><i class="fas fa-level-up-alt"></i>Advanced</p>
                     <p>Stretch shoulders, hips, and hamstrings as you work towards Compass Pose (Parivrtta Surya Yantrasana).
                     </p>
@@ -146,7 +176,7 @@
                     <img src="assets/images/classes/prew-3.png" alt="handstand">
                     <h4>Handstand Variations and Transitions</h4>
                     <p><i class="far fa-clock"></i><span>7:00 am - 11:00 am</span></p>
-                    <p><i class="fas fa-user"></i> <span>Simon Park</span></p>
+                    <p><i class="fas fa-user"></i><span>Simon Park</span></p>
                     <p><i class="fas fa-level-up-alt"></i>Advanced</p>
                     <p>Explore handstand variations and transitions in this advanced class. A brief warm up will prepare you to play with inversions!</p>
                 </div>
@@ -154,7 +184,7 @@
                     <img src="assets/images/classes/prew-4.png" alt="backbending">
                     <h4>Advanced Backbending</h4>
                     <p><i class="far fa-clock"></i><span>7:00 am - 11:00 am</span></p>
-                    <p><i class="fas fa-user"></i> <span>Simon Park</span></p>
+                    <p><i class="fas fa-user"></i><span>Simon Park</span></p>
                     <p><i class="fas fa-level-up-alt"></i>Advanced</p>
                     <p>Amanda Botur has created a class to help you prepare for the hormonal shifts and rising emotions that may occur in the days ...</p>
                 </div>
@@ -164,8 +194,9 @@
     <!-- trial  -->
     <section class="trial">
         <h3>Tap into your inner fountain of youth.</h3>
-        <p>Access hundreds of yoga classes shot in natural studios around the world. Unlimited access for $15/month.</p>
-        <button>Start Your 14-Day Free Trial</button>
+        <p>Access hundreds of yoga classes shot in natural studios around the world. <br> Unlimited access for $15/month.
+        </p>
+        <button class="bttn-hover">Start Your 14-Day Free Trial</button>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -177,6 +208,8 @@
                 <div class="col">
                     <img src="assets/images/trial/trial-3.png" alt="yoga">
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-8">
                     <img src="assets/images/trial/trial-4.png" alt="yoga">
                 </div>
@@ -189,7 +222,7 @@
     <!-- instructors description -->
     <section class="instructors-descr">
         <h3>The Most Experienced Yoga Instructors</h3>
-        <p>Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to enhance your well-being and general approach to holistic health.</p>
+        <p>Our mission is to bring the communities of Brookhaven, Dunwoody, Old Fourth Ward, and <br> Buckhead a knowledgeable, welcoming, and comfortable place to practice yoga and to <br>enhance your well-being and general approach to holistic health.</p>
         <p>Meet Our Teacher</p>
         <button><i class="fas fa-arrow-down"></i></button>
     </section>
@@ -198,64 +231,116 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="assets/images/instructors/Becke Nickerson.png" alt="Becke Nickerson">
-                    <span>Becke Nickerson</span>
-                    <span>Owner/Lead Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Becke Nickerson.png" alt="Becke Nickerson">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Becke Nickerson</span>
+                        <span>Owner/Lead Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Taylor Harkness.png" alt="Taylor Harkness">
-                    <span>Taylor Harkness</span>
-                    <span>Owner/Lead Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Taylor Harkness.png" alt="Taylor Harkness">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Taylor Harkness</span>
+                        <span>Owner/Lead Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Natalie Skubic.png" alt="Natalie Skubic">
-                    <span>Natalie Skubic</span>
-                    <span>Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Natalie Skubic.png" alt="Natalie Skubic">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Natalie Skubic</span>
+                        <span>Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Meredith Hesse.png" alt="Meredith Hesse">
-                    <span>Meredith Hesse</span>
-                    <span>Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Meredith Hesse.png" alt="Meredith Hesse">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Meredith Hesse</span>
+                        <span>Instructor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Jeff Soursa.png" alt="Jeff Soursa">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Jeff Soursa</span>
+                        <span>Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Jeff Soursa.png" alt="Jeff Soursa">
-                    <span>Jeff Soursa</span>
-                    <span>Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Ashley Lorenzo.png" alt="Ashley Lorenzo">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Ashley Lorenzo</span>
+                        <span>Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Ashley Lorenzo.png" alt="Ashley Lorenzo">
-                    <span>Ashley Lorenzo</span>
-                    <span>Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Jessiaca Calderon.png" alt="Jessiaca Calderon">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Jessiaca Calderon</span>
+                        <span>Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Jessiaca Calderon.png" alt="Jessiaca Calderon">
-                    <span>Jessiaca Calderon</span>
-                    <span>Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Doug Johnson.png" alt="Doug Johnson">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Doug Johnson</span>
+                        <span>Instructor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Sharon Caplan.png" alt="Sharon Caplan">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Sharon Caplan</span>
+                        <span>Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Doug Johnson.png" alt="Doug Johnson">
-                    <span>Doug Johnson</span>
-                    <span>Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Erin Rogers.png" alt="Erin Rogers">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Erin Rogers</span>
+                        <span>Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Sharon Caplan.png" alt="Sharon Caplan">
-                    <span>Sharon Caplan</span>
-                    <span>Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Jessica Taylor.png" alt="Jessica Taylor">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Jessica Taylor</span>
+                        <span>Instructor</span>
+                    </div>
                 </div>
                 <div class="col">
-                    <img src="assets/images/instructors/Erin Rogers.png" alt="Erin Rogers">
-                    <span>Erin Rogers</span>
-                    <span>Instructor</span>
-                </div>
-                <div class="col">
-                    <img src="assets/images/instructors/Jessica Taylor.png" alt="Jessica Taylor">
-                    <span>Jessica Taylor</span>
-                    <span>Instructor</span>
-                </div>
-                <div class="col">
-                    <img src="assets/images/instructors/Todd Delaune.png" alt="Todd Delaune">
-                    <span>Todd Delaune</span>
-                    <span>Owner/Lead Instructor</span>
+                    <div class="instructors-avatar">
+                        <img src="assets/images/instructors/Todd Delaune.png" alt="Todd Delaune">
+                    </div>
+                    <div class="instructors-descr">
+                        <span>Todd Delaune</span>
+                        <span>Owner/Lead Instructor</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,11 +348,11 @@
     <!-- challenge -->
     <section class="challenge">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col">
                     <h2>2020 Renewal Series</h2>
-                    <p>Finally, a resolution you can stick to. Reconnect with your fitness goals in 2017 with four classes designed to ease you back into your routine.</p>
-                    <button>Take this challenge</button>
+                    <p>Finally, a resolution you can stick to. Reconnect <br> with your fitness goals in 2017 with four classes <br> designed to ease you back into your routine.</p>
+                    <button class="bttn-hover">Take this challenge</button>
                 </div>
             </div>
         </div>
@@ -296,10 +381,12 @@
                     <p>To receive the lastest freebies in your inbox</p>
                 </div>
                 <div class="col">
-                    <form action="">
-                        <input type="email">
-                        <button>Subscribe</button>
-                    </form>
+                    <label for="subscribe">
+                        <form action="" id="subscribe">
+                            <input type="email">
+                            <button class="bttn-hover">Subscribe</button>
+                        </form>
+                    </label>
                 </div>
             </div>
         </div>
@@ -314,10 +401,10 @@
                     <p><a href="emailto:Alitstudios@gmai.com">Alitstudios@gmai.com</a></p>
                     <p><a href="tel:+61 3 8376 6284">+61 3 8376 6284</a></p>
                     <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                        <i class="fab fa-pinterest-p"></i>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
                 <div class="col">
@@ -392,7 +479,7 @@
                 <div class="col">
                     <h5>Our Location</h5>
                     <div class="map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43e056e8df1288f361c740abd44d3fed031ba1aaf3d4ae3014962062d727c4f0&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43e056e8df1288f361c740abd44d3fed031ba1aaf3d4ae3014962062d727c4f0&amp;source=constructor" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
