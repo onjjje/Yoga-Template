@@ -82,15 +82,6 @@
         z-index: 10;
     }
     
-    header .navbar-collapse {
-        padding: 20px 0;
-        background: #ffffffe6;
-        border-radius: 12px;
-        -webkit-box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
-        -moz-box-shadow: 6px 6px 12px 6px rgba(116, 146, 236, 0.35);
-        box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
-    }
-    
     header .navbar-light .navbar-toggler {
         color: rgb(116 146 236);
         border-color: rgb(116 146 236);
@@ -517,5 +508,17 @@
         /* classes */
         section.classes div.container div.row div.col>img {
             /* height: 410px; */
+        }
+    }
+    
+    @media (max-width: 991px) {
+        /* nav */
+        header .navbar-collapse {
+            padding: 20px 0;
+            background: #ffffffe6;
+            border-radius: 12px;
+            -webkit-box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
+            -moz-box-shadow: 6px 6px 12px 6px rgba(116, 146, 236, 0.35);
+            box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
         }
     }
