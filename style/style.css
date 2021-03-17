@@ -82,6 +82,24 @@
         z-index: 10;
     }
     
+    header .navbar-collapse {
+        padding: 20px 0;
+        background: #ffffffe6;
+        border-radius: 12px;
+        -webkit-box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
+        -moz-box-shadow: 6px 6px 12px 6px rgba(116, 146, 236, 0.35);
+        box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
+    }
+    
+    header .navbar-light .navbar-toggler {
+        color: rgb(116 146 236);
+        border-color: rgb(116 146 236);
+    }
+    
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("../assets/menu.png");
+    }
+    
     header .navbar {
         margin-top: 40px;
     }
@@ -373,13 +391,16 @@
         color: #ffffff;
     }
     
-    section.subscribe>div.container>div.row>div.col,
-    section.subscribe>div.container>div.row>div.col-xl {
+    section.subscribe>div.container>div.row>div.col-sm {
         margin: 20px 0;
     }
     
-    section.subscribe>div.col>h5 {
+    section.subscribe>div.col-sm>h5 {
         margin-top: 20px;
+    }
+    
+    section.subscribe label {
+        width: 100%;
     }
     
     section.subscribe #subscribe {
@@ -387,7 +408,8 @@
     }
     
     section.subscribe input[type=email] {
-        width: 300px;
+        min-width: 300px;
+        width: 100%;
         padding: 12px 26px;
         border: 1px solid #181818;
         font-size: 12px;
@@ -456,15 +478,15 @@
     }
     
     section.contactus .hours-content .day-item span.hours {
+        width: 75px;
         white-space: nowrap;
     }
     
     div.map iframe {
-        margin: 0 auto;
+        margin: 20px auto;
         display: block;
         border-radius: 12px;
         width: 100%;
-        max-width: 360px;
         height: 240px;
     }
     /* footer */
@@ -476,4 +498,24 @@
     
     footer a {
         color: #ffffff;
+    }
+    /* home mobile style  */
+    
+    @media (max-width: 576px) {
+        /* subscribe */
+        section.subscribe>div.container>div.row>div.col-sm>img {
+            display: block;
+            margin: 0 auto;
+        }
+        /* contact Us */
+        section.contactus .hours-content {
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        /* classes */
+        section.classes div.container div.row div.col>img {
+            /* height: 410px; */
+        }
     }
