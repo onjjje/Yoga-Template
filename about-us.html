@@ -35,7 +35,7 @@
                             <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Teacher</a>
+                            <a class="nav-link" href="teacher.html">Teacher</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pricing.html">Pricing</a>
@@ -46,8 +46,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
                         </li>
-                        <li class="nav-item bttn-hover">
-                            <a class="nav-link" href="#">Start Your Free Trial</a>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto bttn-hover" href="#trial">Start Your Free Trial</a>
                         </li>
                     </ul>
                 </div>
@@ -62,13 +62,13 @@
                 <div class="carousel-item active slider-right-title">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg">
+                            <div class="col-lg wow bounceInLeft">
                                 <h2>About Us</h2>
                                 <p>Welcome To Wand Yoga Studio</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg align-self-center">
+                            <div class="col-lg align-self-center  wow bounceInUp">
                                 <p>We offers over 4,000 professionally-filmed online yoga classes taught by experienced, certified yoga teachers to customers around the world. We believe that yoga should be accessible to everyone and our classes are designed
                                     to give you an in-studio e xperience, at an affordable price, in your own home. </p>
                                 <p>
@@ -78,7 +78,7 @@
                                 </p>
                             </div>
                             <div class="col">
-                                <img src="assets/images/about/about-us-girl.png" alt="Yoga Studio">
+                                <img class=" wow bounceInRight" src="assets/images/about/about-us-girl.png" alt="Yoga Studio">
                             </div>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
         </div>
     </section>
     <!-- trial  -->
-    <section class="trial wow bounceInUp" data-wow-offset="350">
+    <section class="trial wow bounceInUp" id="trial" data-wow-offset="350">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -218,12 +218,10 @@
                     <p>To receive the lastest freebies in your inbox</p>
                 </div>
                 <div class="col-sm">
-                    <label for="subscribe">
-                        <form action="" id="subscribe">
-                            <input type="email">
-                            <button class="bttn-hover">Subscribe</button>
-                        </form>
-                    </label>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="subscribe" name="subscribe">
+                        <input type="email" name="emailUserSub" value="" placeholder="Email">
+                        <button class="bttn-hover" type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>

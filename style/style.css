@@ -772,6 +772,25 @@ body.teacher section.header-content p {
 }
 
 
+/* classes video  */
+
+body.teacher section.classes-video .info-ico {
+    display: flex;
+}
+
+body.teacher section.classes-video .info-ico i {
+    margin: 0 30px 60px 0;
+    color: #7492ec;
+    font-weight: 700;
+}
+
+body.teacher section.classes-video .info-ico i>span {
+    margin-left: 10px;
+    font-weight: 100;
+    color: #666666;
+}
+
+
 /* benefits  */
 
 body.teacher section.benefits .container {
