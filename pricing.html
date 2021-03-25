@@ -37,7 +37,7 @@
                             <a class="nav-link" href="teacher.html">Teacher</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
+                            <a class="nav-link active-link" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -45,8 +45,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
                         </li>
-                        <li class="nav-item bttn-hover">
-                            <a class="nav-link" href="#">Start Your Free Trial</a>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto bttn-hover" href="#trial">Start Your Free Trial</a>
                         </li>
                     </ul>
                 </div>
@@ -62,8 +62,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-5">
-                                <h2>Our Pricing</h2>
-                                <p>Whether you seek a long-term commitment or drop-in session, find a studio and rate that works for you. We have membership and class package options that are as diverse as our classes.</p>
+                                <h2 class="wow bounceInLeft">Our Pricing</h2>
+                                <p class="wow bounceInLeft" data-wow-delay="0.5s">Whether you seek a long-term commitment or drop-in session, find a studio and rate that works for you. We have membership and class package options that are as diverse as our classes.</p>
                             </div>
                         </div>
                     </div>
@@ -84,25 +84,25 @@
     <section class="pricing">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 wow zoomIn" data-wow-delay="0.1s">
                     <h3>$19 <span>/ One Class</span> </h3>
                     <h6>walk-in rate</h6>
                     <p>Meant for the occassional practictioner! These classes NEVER expire!</p>
                     <button class="bttn-hover">Sign up now</button>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 wow zoomIn" data-wow-delay="0.4s">
                     <h3>$59 <span>/ 5 Class</span> </h3>
                     <h6>5 class pass</h6>
                     <p>Meant for the occassional practictioner! These classes NEVER expire!</p>
                     <button class="bttn-hover">Sign up now</button>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 wow zoomIn" data-wow-delay="0.7s">
                     <h3>$99 <span>/ 10 Class</span> </h3>
                     <h6>10 class pass</h6>
                     <p>Meant for the occassional practictioner! These classes NEVER expire!</p>
                     <button class="bttn-hover">Sign up now</button>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 wow zoomIn" data-wow-delay="1s">
                     <h3>$179 <span>/ 20 Class</span> </h3>
                     <h6>20 class pass</h6>
                     <p>Meant for the occassional practictioner! These classes NEVER expire!</p>
@@ -112,7 +112,7 @@
         </div>
     </section>
     <!-- challenge -->
-    <section class="challenge">
+    <section class="challenge wow zoomIn" data-wow-delay="1s">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-6">
@@ -125,7 +125,7 @@
     </section>
     <!-- subscribe -->
     <section class="subscribe">
-        <div class="container">
+        <div class="container wow bounceInUp">
             <div class="row align-items-center">
                 <div class="col-sm">
                     <img src="assets/logo-subscribe.png" alt="Yoga subscribe">
@@ -135,25 +135,23 @@
                     <p>To receive the lastest freebies in your inbox</p>
                 </div>
                 <div class="col-sm">
-                    <label for="subscribe">
-                        <form action="" id="subscribe">
-                            <input type="email">
-                            <button class="bttn-hover">Subscribe</button>
-                        </form>
-                    </label>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="subscribe" name="subscribe">
+                        <input type="email" name="emailUserSub" value="" placeholder="Email">
+                        <button class="bttn-hover" type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
     <!-- contact Us-->
     <section class="contactus">
-        <div class="container">
+        <div class="container wow bounceInUp" data-wow-delay="0.5s">
             <div class="row">
                 <div class="col">
                     <h5>Contact Us</h5>
                     <p>PO Box 16122 Collins Street West,<br>Victoria 8007 Australia</p>
-                    <p><a href="emailto:Alitstudios@gmai.com">Alitstudios@gmai.com</a></p>
-                    <p><a href="tel:+61 3 8376 6284">+61 3 8376 6284</a></p>
+                    <p><a href="mailto:Alitstudios@gmai.com">Alitstudios@gmai.com</a></p>
+                    <p><a href="tel:+61383766284">+61 3 8376 6284</a></p>
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -267,6 +265,10 @@
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="script/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="script/script.js"></script>
 </body>
 

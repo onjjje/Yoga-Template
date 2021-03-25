@@ -66,6 +66,11 @@ h6 {
     font-weight: 200;
 }
 
+.active-link {
+    color: #7492ec!important;
+    border-bottom: 2px solid #7492ec;
+}
+
 
 /* video style  */
 
@@ -147,6 +152,7 @@ header .navbar-light .navbar-nav .nav-link {
 header .navbar-light .navbar-nav .nav-link:focus,
 header .navbar-light .navbar-nav .nav-link:hover {
     color: #7492ec;
+    border-bottom: 2px solid #7492ec;
 }
 
 a.nav-link.scrollto.bttn-hover {
@@ -848,7 +854,6 @@ body.pricing section.pricing .row .col-sm-3 {
 body.pricing section.pricing .row .col-sm-3:hover {
     border: 2px solid #7492ec;
     border-radius: 36px;
-    transform: scale(0.95);
 }
 
 body.pricing section.pricing h3 {
@@ -917,4 +922,96 @@ body.contact-page section.header-content p {
 
 /* contact content  */
 
-body.contact-page section.contact-content {}
+body.contact-page section.contact-content {
+    margin-bottom: 120px;
+}
+
+body.contact-page section.contact-content .form-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+
+body.contact-page section.contact-content .form-wrap .input-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0 15px 0;
+}
+
+body.contact-page section.contact-content .form-wrap .input-wrap input,
+body.contact-page section.contact-content .form-wrap .input-wrap select {
+    min-width: 48%;
+    height: 50px;
+}
+
+body.contact-page section.contact-content .form-wrap textarea {
+    height: 210px;
+    width: 100%;
+    margin: 15px 0 15px 0;
+    resize: none;
+}
+
+body.contact-page section.contact-content button {
+    margin: 15px 0 15px 0;
+    height: 50px;
+    background: #7492ec;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+body.contact-page section.contact-content button:hover {
+    transform: scale(0.95);
+}
+
+body.contact-page section.contact-content .form-wrap .input-wrap input[type="text"],
+body.contact-page section.contact-content .form-wrap .input-wrap input[type="email"],
+body.contact-page section.contact-content .form-wrap .input-wrap input[type="tel"],
+body.contact-page section.contact-content .form-wrap .input-wrap select,
+body.contact-page section.contact-content .form-wrap textarea {
+    padding-left: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    outline: none;
+    color: #666666;
+}
+
+body.contact-page section.contact-content .form-wrap textarea {
+    padding-top: 12px;
+}
+
+body.contact-page section.contact-content .form-wrap .input-wrap input:focus,
+body.contact-page section.contact-content .form-wrap .input-wrap select:focus,
+body.contact-page section.contact-content .form-wrap textarea:focus {
+    border: 2px solid #7492ec;
+}
+
+body.contact-page section.contact-content .col-sm-3 iframe {
+    height: 270px;
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+body.contact-page section.contact-content .col-sm-3 h6 {
+    margin: 12px 0 15px 0;
+    font-weight: bold;
+}
+
+body.contact-page section.contact-content .col-sm-3 p {
+    margin: 15px 0 15px 0;
+    color: #666666;
+}
+
+body.contact-page section.contact-content .col-sm-3 a {
+    display: block;
+    padding: 12px 0 6px 0;
+}
+
+body.contact-page section.contact-content .col-sm-3>a.email-link {
+    color: #666666;
+    text-decoration: none;
+}

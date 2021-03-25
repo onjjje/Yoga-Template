@@ -40,13 +40,13 @@
                             <a class="nav-link" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link active-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
                         </li>
-                        <li class="nav-item bttn-hover">
-                            <a class="nav-link" href="#">Start Your Free Trial</a>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto bttn-hover" href="#trial">Start Your Free Trial</a>
                         </li>
                     </ul>
                 </div>
@@ -58,8 +58,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h3>Contact us</h3>
-                    <p>Whether you’re looking for answers, would like to solve a problem, or just want to let us know how we did, you’ll find many ways to contact us right here.</p>
+                    <h3 class="wow bounceInLeft">Contact us</h3>
+                    <p class="wow bounceInUp">Whether you’re looking for answers, would like to solve a problem, or just want to let us know how we did, you’ll find many ways to contact us right here.</p>
                 </div>
             </div>
         </div>
@@ -68,32 +68,37 @@
     <section class="contact-content">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <form action="">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="phone" placeholder="Phone">
-                        <input type="text" placeholder="Subject">
-                        <input type="text" placeholder="Message">
+                <div class="col-sm-6 form-wrap wow bounceInLeft">
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="feedback" name="feedback">
+                        <div class="input-wrap">
+                            <input name="userName" type="text" placeholder="Name">
+                            <input name="userEmail" type="email" placeholder="Email">
+                        </div>
+                        <div class="input-wrap">
+                            <input name="userPhone" type="tel" placeholder="Phone">
+                            <select name="userSelectSubject" id="">
+                                <option selected value="notSelected">Subject</option>
+                                <option value="NewYork">New York</option>
+                                <option value="LosAngeles">Los Angeles</option>
+                                <option value="SanFrancisco">San Francisco</option>
+                            </select>
+                        </div>
+                        <textarea name="userMessage" id="" placeholder="Message..."></textarea>
                     </form>
-                    <label for="">
-                        <button>SEND MESSAGE</button>
-                    </label>
+                    <button form="feedback" type="submit">SEND MESSAGE</button>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 wow bounceInRight">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43e056e8df1288f361c740abd44d3fed031ba1aaf3d4ae3014962062d727c4f0&amp;source=constructor" frameborder="0"></iframe>
                     <h6>Newyork Studio</h6>
-                    <p>PO Box 16122 Collins Street West,</p>
-                    <p>Victoria 8007 Australia</p>
-                    <a href="mailto:Alitstudios@gmai.com">Alitstudios@gmai.com</a>
+                    <p>PO Box 16122 Collins Street West,<br>Victoria 8007 Australia</p>
+                    <a href="mailto:Alitstudios@gmai.com" class="email-link">Alitstudios@gmai.com</a>
                     <a href="tel:+61383766284">+61 3 8376 6284</a>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 wow bounceInRight" data-wow-delay="0.5s">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43e056e8df1288f361c740abd44d3fed031ba1aaf3d4ae3014962062d727c4f0&amp;source=constructor" frameborder="0"></iframe>
-                    <h6>Newyork Studio</h6>
-                    <p>PO Box 16122 Collins Street West,</p>
-                    <p>Victoria 8007 Australia</p>
-                    <a href="mailto:Alitstudios@gmai.com">Alitstudios@gmai.com</a>
+                    <h6>Los Angeles Studio</h6>
+                    <p>PO Box 16122 Collins Street West,<br>Victoria 8007 Australia</p>
+                    <a href="mailto:Alitstudios@gmai.com" class="email-link">Alitstudios@gmai.com</a>
                     <a href="tel:+61383766284">+61 3 8376 6284</a>
                 </div>
             </div>
@@ -101,7 +106,7 @@
     </section>
     <!-- subscribe -->
     <section class="subscribe">
-        <div class="container">
+        <div class="container  wow bounceIn">
             <div class="row align-items-center">
                 <div class="col-sm">
                     <img src="assets/logo-subscribe.png" alt="Yoga subscribe">
@@ -111,19 +116,17 @@
                     <p>To receive the lastest freebies in your inbox</p>
                 </div>
                 <div class="col-sm">
-                    <label for="subscribe">
-                        <form action="" id="subscribe">
-                            <input type="email">
-                            <button class="bttn-hover">Subscribe</button>
-                        </form>
-                    </label>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="subscribe" name="subscribe">
+                        <input type="email" name="emailUserSub" value="" placeholder="Email">
+                        <button class="bttn-hover" type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
     <!-- contact Us-->
     <section class="contactus">
-        <div class="container">
+        <div class="container wow bounceIn">
             <div class="row">
                 <div class="col">
                     <h5>Contact Us</h5>
@@ -241,6 +244,10 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="script/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="script/script.js"></script>
 </body>
 

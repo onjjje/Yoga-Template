@@ -10,6 +10,14 @@
     section.contactus .hours-content {
         align-items: center;
     }
+    /* teacher page  */
+    /* classes video */
+    body.teacher section.classes-video {
+        margin-top: 30px;
+    }
+    body.teacher section.classes-video .info-ico {
+        display: none;
+    }
 }
 
 @media (max-width: 991px) {
