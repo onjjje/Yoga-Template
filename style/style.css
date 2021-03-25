@@ -149,6 +149,10 @@ header .navbar-light .navbar-nav .nav-link:hover {
     color: #7492ec;
 }
 
+a.nav-link.scrollto.bttn-hover {
+    padding: 12px 26px;
+}
+
 
 /* slider  */
 
@@ -156,15 +160,6 @@ section.slider {
     background: url('../assets/images/header/home/header-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-section.slider .slider-title {
-    position: relative;
-}
-
-section.slider .carousel-caption.d-none.d-md-block.slider-title>.slider-content {
-    position: absolute;
-    top: 50%;
 }
 
 .slider-right-title .carousel-caption {
@@ -183,8 +178,7 @@ section.slider .carousel-caption.d-none.d-md-block>h5 {
 /* about */
 
 section.about {
-    position: relative;
-    top: -234px;
+    margin-bottom: 30px;
 }
 
 section.about div.about-top-bg {
@@ -227,34 +221,35 @@ section.classes>div.container>div.row {
     padding-bottom: 120px;
 }
 
-section.classes div.container div.row div.col>img {
+section.classes div.container div.row div.col-md>img {
     display: block;
     margin: 0 auto;
-    height: 200px;
-    width: auto;
+    height: 277px;
+    height: auto;
+    width: 100%;
     border-radius: 12px;
     -webkit-box-shadow: 0px 0px 12px 2px rgba(9, 9, 9, 0.1);
     -moz-box-shadow: 0px 0px 12px 2px rgba(9, 9, 9, 0.1);
     box-shadow: 0px 0px 12px 2px rgba(9, 9, 9, 0.1);
 }
 
-section.classes div.container div.row div.col>h4 {
+section.classes div.container div.row div.col-md>h4 {
     height: 50px;
     text-align: justify;
     margin-top: 30px;
 }
 
-section.classes div.container div.row div.col>p {
+section.classes div.container div.row div.col-md>p {
     font-size: 13px;
     color: #999999;
 }
 
-section.classes div.container div.row div.col>p:last-child {
+section.classes div.container div.row div.col-md>p:last-child {
     color: #666666;
     font-weight: 500;
 }
 
-section.classes div.container div.row div.col>p>i {
+section.classes div.container div.row div.col-md>p>i {
     color: #8ca4ee;
     padding-right: 10px;
 }
@@ -299,6 +294,7 @@ section.trial .col-8>img {
 /* instructors description */
 
 section.instructors-descr {
+    padding-bottom: 100px;
     background: url('../assets/images/instructors/instructors-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -316,14 +312,16 @@ section.instructors-descr>p {
     padding: 30px 0;
 }
 
-section.instructors-descr>button {
+section.instructors-descr>a {
+    display: block;
     width: 40px;
     height: 40px;
-    margin-bottom: 100px;
+    margin: 0 auto;
     border-radius: 50%;
     background: none;
     border: 2px solid #ffffff;
     color: #ffffff;
+    line-height: 38px;
 }
 
 
@@ -484,6 +482,41 @@ section.contactus div.col a {
     text-decoration: none;
 }
 
+section.contactus .social a {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+section.contactus .social a:hover {
+    transform: scale(1.3);
+}
+
+section.contactus .social a i {
+    color: #ffffff;
+    line-height: 2.3;
+}
+
+section.contactus .social a:nth-child(1) {
+    background: #365493;
+}
+
+section.contactus .social a:nth-child(2) {
+    background: #33ccff;
+}
+
+section.contactus .social a:nth-child(3) {
+    background: #d44132;
+}
+
+section.contactus .social a:nth-child(4) {
+    background: #cb2027;
+}
+
 section.contactus .hours-content {
     display: flex;
     flex-direction: column;
@@ -533,46 +566,10 @@ footer a {
 }
 
 
-/* home mobile style  */
-
-@media (max-width: 576px) {
-    /* subscribe */
-    section.subscribe>div.container>div.row>div.col-sm>img {
-        display: block;
-        margin: 0 auto;
-    }
-    /* contact Us */
-    section.contactus .hours-content {
-        align-items: center;
-    }
-}
-
-@media (max-width: 767px) {
-    /* classes */
-    section.classes div.container div.row div.col>img {
-        /* height: 410px; */
-    }
-}
-
-@media (max-width: 991px) {
-    /* nav */
-    header .navbar-collapse {
-        padding: 20px 0;
-        background: #ffffffe6;
-        border-radius: 12px;
-        -webkit-box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
-        -moz-box-shadow: 6px 6px 12px 6px rgba(116, 146, 236, 0.35);
-        box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
-    }
-}
-
-
 /* about-us page style  */
 
 
 /* header  */
-
-header {}
 
 
 /* slider */
@@ -737,15 +734,15 @@ header {}
 
 /* trial  */
 
-section.trial {
+.about-us section.trial {
     text-align: center;
 }
 
-section.trial h3 {
+.about-us section.trial h3 {
     padding-top: 120px;
 }
 
-section.trial p {
+.about-us section.trial p {
     padding-top: 30px;
     font-size: 14px;
     color: #666666;
@@ -758,7 +755,7 @@ section.trial p {
 /* header content  */
 
 body.teacher section.header-content {
-    background: url(../assets/images/teacher/header-bg.png);
+    background: url('../assets/images/teacher/header-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -874,3 +871,31 @@ body.pricing section.challenge {
 body.pricing section.challenge div.container {
     background: none;
 }
+
+
+/* contact page style  */
+
+
+/* header content  */
+
+body.contact-page section.header-content {
+    background: url('../assets/images/contact/top-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.contact-page section.header-content h3 {
+    margin: 320px 0 15px 0;
+    color: #7492ec;
+}
+
+body.contact-page section.header-content p {
+    padding-bottom: 355px;
+    color: #99aade;
+    font-weight: 100;
+}
+
+
+/* contact content  */
+
+body.contact-page section.contact-content {}

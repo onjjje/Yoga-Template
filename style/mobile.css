@@ -1,0 +1,29 @@
+/* home mobile style  */
+
+@media (max-width: 576px) {
+    /* subscribe */
+    section.subscribe>div.container>div.row>div.col-sm>img {
+        display: block;
+        margin: 0 auto;
+    }
+    /* contact Us */
+    section.contactus .hours-content {
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    /* nav */
+    header .navbar-collapse {
+        padding: 20px 0;
+        background: #ffffffe6;
+        border-radius: 12px;
+        -webkit-box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
+        -moz-box-shadow: 6px 6px 12px 6px rgba(116, 146, 236, 0.35);
+        box-shadow: 6px 6px 12px 6px rgb(116 146 236 / 35%);
+    }
+    /* slider title  */
+    section.slider .carousel-caption.d-none.d-md-block>h5 {
+        font-size: 50px;
+    }
+}
