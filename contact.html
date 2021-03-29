@@ -28,31 +28,51 @@
                 <div class="collapse navbar-collapse justify-content-end wow bounceInDown" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a title="Home" class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About Us</a>
+                            <a title="About Us" class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="teacher.html">Teacher</a>
+                            <a title="Teacher" class="nav-link" href="teacher.html">Teacher</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
+                            <a title="Pricing" class="nav-link" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active-link" href="contact.html">Contact</a>
+                            <a title="Contact" class="nav-link active-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a title="Login Window" class="nav-link" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scrollto bttn-hover" href="#trial">Start Your Free Trial</a>
+                            <a title="Free trial lessons" class="nav-link scrollto bttn-hover" href="#trial" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Start Your Free Trial</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Login -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="ava-login" src="assets/ava-login.png" alt="Login Yoga">
+                    <button type="button" class="btn-close btn-close-login" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="login" name="login">
+                        <input type="email" name="emailUser" value="" placeholder="Email">
+                        <input type="password" name="passwordUser" value="" placeholder="Password">
+                        <button class="bttn-hover" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- header content  -->
     <section class="header-content">
         <div class="container">
@@ -64,6 +84,37 @@
             </div>
         </div>
     </section>
+    <!-- trial modal  -->
+    <!-- Modal -->
+    <div class="modal fade trial-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Start Your Free Trial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="freeTrial" name="freeTrial">
+                        <div class="input-wrap">
+                            <input id="userEmail" name="userEmail" type="email" placeholder="Email">
+                            <input id="userName" name="userName" type="text" placeholder="Name">
+                        </div>
+                        <div class="input-wrap">
+                            <input id="userPhone" name="userPhone" type="tel" placeholder="Phone">
+                            <select name="userSelectSubject" id="userSelectSubject">
+                                <option id="notSelected" selected value="notSelected">Subject</option>
+                                <option id="NewYork" value="NewYork">New York</option>
+                                <option id="LosAngeles" value="LosAngeles">Los Angeles</option>
+                                <option id="SanFrancisco" value="SanFrancisco">San Francisco</option>
+                            </select>
+                        </div>
+                        <textarea name="userMessage" id="" placeholder="Message..."></textarea>
+                        <button class="bttn-hover" type="submit">Start</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- contact content  -->
     <section class="contact-content">
         <div class="container">

@@ -28,31 +28,82 @@
                 <div class="collapse navbar-collapse justify-content-end wow bounceInDown" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a title="Home" class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About Us</a>
+                            <a title="About Us" class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="teacher.html">Teacher</a>
+                            <a title="Teacher" class="nav-link" href="teacher.html">Teacher</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active-link" href="pricing.html">Pricing</a>
+                            <a title="Pricing" class="nav-link active-link" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a title="Contact" class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a title="Login Window" class="nav-link" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scrollto bttn-hover" href="#trial">Start Your Free Trial</a>
+                            <a title="Free trial lessons" class="nav-link scrollto bttn-hover" href="#trial">Start Your Free Trial</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- trial modal  -->
+    <!-- Modal -->
+    <div class="modal fade trial-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Start Your Free Trial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="freeTrial" name="freeTrial">
+                        <div class="input-wrap">
+                            <input id="userEmail" name="userEmail" type="email" placeholder="Email">
+                            <input id="userName" name="userName" type="text" placeholder="Name">
+                        </div>
+                        <div class="input-wrap">
+                            <input id="userPhone" name="userPhone" type="tel" placeholder="Phone">
+                            <select name="userSelectSubject" id="userSelectSubject">
+                                <option id="notSelected" selected value="notSelected">Subject</option>
+                                <option id="NewYork" value="NewYork">New York</option>
+                                <option id="LosAngeles" value="LosAngeles">Los Angeles</option>
+                                <option id="SanFrancisco" value="SanFrancisco">San Francisco</option>
+                            </select>
+                        </div>
+                        <textarea name="userMessage" id="" placeholder="Message..."></textarea>
+                        <button class="bttn-hover" type="submit">Start</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="ava-login" src="assets/ava-login.png" alt="Login Yoga">
+                    <button type="button" class="btn-close btn-close-login" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="POST" id="login" name="login">
+                        <input type="email" name="emailUser" value="" placeholder="Email">
+                        <input type="password" name="passwordUser" value="" placeholder="Password">
+                        <button class="bttn-hover" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- slider  -->
     <section class="slider">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -113,20 +164,20 @@
     </section>
     <!-- challenge -->
     <section class="challenge wow zoomIn" data-wow-delay="1s">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
+        <div class=" container" id="trial">
+            <div class="row align-items-center ">
+                <div class="col-sm-6 ">
                     <h2>2021 Renewal Series</h2>
                     <p>Finally, a resolution you can stick to. Reconnect with your fitness goals in 2017 with four classes designed to ease you back into your routine.</p>
-                    <button class="bttn-hover">Take this challenge</button>
+                    <button class="bttn-hover" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Take this challenge</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- subscribe -->
     <section class="subscribe">
-        <div class="container wow bounceInUp">
-            <div class="row align-items-center">
+        <div class="container wow bounceInUp" data-wow-offset="50">
+            <div class="row">
                 <div class="col-sm">
                     <img src="assets/logo-subscribe.png" alt="Yoga subscribe">
                 </div>
@@ -144,93 +195,93 @@
         </div>
     </section>
     <!-- contact Us-->
-    <section class="contactus">
-        <div class="container wow bounceInUp" data-wow-delay="0.5s">
-            <div class="row">
-                <div class="col">
+    <section class="contactus ">
+        <div class="container wow bounceInUp " data-wow-delay="0.5s ">
+            <div class="row ">
+                <div class="col ">
                     <h5>Contact Us</h5>
                     <p>PO Box 16122 Collins Street West,<br>Victoria 8007 Australia</p>
-                    <p><a href="mailto:Alitstudios@gmai.com">Alitstudios@gmai.com</a></p>
-                    <p><a href="tel:+61383766284">+61 3 8376 6284</a></p>
-                    <div class="social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <p><a href="mailto:Alitstudios@gmai.com ">Alitstudios@gmai.com</a></p>
+                    <p><a href="tel:+61383766284 ">+61 3 8376 6284</a></p>
+                    <div class="social ">
+                        <a href="# "><i class="fab fa-facebook-f "></i></a>
+                        <a href="# "><i class="fab fa-twitter "></i></a>
+                        <a href="# "><i class="fab fa-google-plus-g "></i></a>
+                        <a href="# "><i class="fab fa-pinterest-p "></i></a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col ">
                     <h5>Useful Links</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Advertise</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">Advertise</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Term & Conditions</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">Term & Conditions</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy Policy</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">Privacy Policy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Carees</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">Carees</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# ">Shop</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col ">
                     <h5>Open Hours</h5>
-                    <div class="hours-content">
-                        <div class="day-item">
-                            <span class="day">Monday</span>
-                            <span class="spaser"></span>
-                            <span class="hours">11am - 2pm</span>
+                    <div class="hours-content ">
+                        <div class="day-item ">
+                            <span class="day ">Monday</span>
+                            <span class="spaser "></span>
+                            <span class="hours ">11am - 2pm</span>
                         </div>
 
-                        <div class="day-item">
-                            <span class="day">Tuesday</span>
-                            <span class="spaser"></span>
-                            <span class="hours">8am - 10pm</span>
+                        <div class="day-item ">
+                            <span class="day ">Tuesday</span>
+                            <span class="spaser "></span>
+                            <span class="hours ">8am - 10pm</span>
                         </div>
 
-                        <div class="day-item">
-                            <span class="day">Wendesday</span>
-                            <span class="spaser"></span>
-                            <span class="hours">11am - 12pm</span>
+                        <div class="day-item ">
+                            <span class="day ">Wendesday</span>
+                            <span class="spaser "></span>
+                            <span class="hours ">11am - 12pm</span>
                         </div>
-                        <div class="day-item">
-                            <span class="day">Thursday</span>
-                            <span class="spaser"></span>
-                            <span class="hours">11am - 12pm</span>
-                        </div>
-
-                        <div class="day-item">
-                            <span class="day">Friday</span>
-                            <span class="spaser"></span>
-                            <span class="hours">10am - 2pm</span>
+                        <div class="day-item ">
+                            <span class="day ">Thursday</span>
+                            <span class="spaser "></span>
+                            <span class="hours ">11am - 12pm</span>
                         </div>
 
-                        <div class="day-item">
-                            <span class="day">Saturday</span>
-                            <span class="spaser"></span>
-                            <span class="hours">10am - 2pm</span>
+                        <div class="day-item ">
+                            <span class="day ">Friday</span>
+                            <span class="spaser "></span>
+                            <span class="hours ">10am - 2pm</span>
                         </div>
 
-                        <div class="day-item">
-                            <span class="day">Sunday</span>
-                            <span class="spaser"></span>
-                            <span class="hours">Close</span>
+                        <div class="day-item ">
+                            <span class="day ">Saturday</span>
+                            <span class="spaser "></span>
+                            <span class="hours ">10am - 2pm</span>
+                        </div>
+
+                        <div class="day-item ">
+                            <span class="day ">Sunday</span>
+                            <span class="spaser "></span>
+                            <span class="hours ">Close</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl">
+                <div class="col-xl ">
                     <h5>Our Location</h5>
-                    <div class="map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43e056e8df1288f361c740abd44d3fed031ba1aaf3d4ae3014962062d727c4f0&amp;source=constructor" frameborder="0"></iframe>
+                    <div class="map ">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43e056e8df1288f361c740abd44d3fed031ba1aaf3d4ae3014962062d727c4f0&amp;source=constructor " frameborder="0 "></iframe>
                     </div>
                 </div>
             </div>
@@ -238,24 +289,24 @@
     </section>
     <!-- footer  -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+        <div class="container ">
+            <div class="row ">
+                <div class="col ">
+                    <ul class="nav justify-content-end ">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="index.html ">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About Us</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="about-us.html ">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="teacher.html">Teacher</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="teacher.html ">Teacher</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="pricing.html ">Pricing</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="contact.html ">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -264,12 +315,12 @@
     </footer>
 
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="script/wow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js " integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 " crossorigin="anonymous "></script>
+    <script src="script/wow.js "></script>
     <script>
         new WOW().init();
     </script>
-    <script src="script/script.js"></script>
+    <script src="script/script.js "></script>
 </body>
 
 

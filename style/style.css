@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    outline: none;
 }
 
 body {
@@ -23,7 +24,6 @@ body {
     border-radius: 42px;
     transition: .5s;
     color: #ffffff;
-    outline: none;
     border: 1px solid white;
 }
 
@@ -31,7 +31,6 @@ body {
 .bttn-hover:focus {
     background: #ffffff83;
     color: #7492ec;
-    outline: none;
     border: 1px solid #7492ec;
 }
 
@@ -69,6 +68,70 @@ h6 {
 .active-link {
     color: #7492ec!important;
     border-bottom: 2px solid #7492ec;
+}
+
+
+/* login modal */
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    border: none;
+}
+
+.ava-login {
+    margin: 0 auto;
+    background: #7492ec;
+    border-radius: 50%;
+}
+
+#login input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0 12px 0;
+    border-radius: 8px;
+    border: 1px solid #999999;
+}
+
+#login input:focus {
+    border: 2px solid #7492ec;
+}
+
+.btn-close-login {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-body>h5 {
+    text-align: center;
+    color: #7492ec;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* trial modal  */
+
+.trial-modal .modal-header h5 {
+    text-align: center;
+    color: #7492ec;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.trial-modal .modal-body .input-wrap input,
+.trial-modal .modal-body .input-wrap select,
+.trial-modal .modal-body textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0 12px 0;
+    border-radius: 8px;
+    border: 1px solid #999999;
 }
 
 

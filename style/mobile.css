@@ -18,6 +18,20 @@
     body.teacher section.classes-video .info-ico {
         display: none;
     }
+    body.pricing section.challenge {
+        background-position: bottom;
+    }
+    /* contact page style  */
+    body.contact-page section.contact-content .form-wrap .input-wrap {
+        flex-direction: column;
+    }
+    body.contact-page section.contact-content .form-wrap .input-wrap input,
+    body.contact-page section.contact-content .form-wrap .input-wrap select {
+        width: 100%;
+    }
+    body.contact-page section.header-content p {
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width: 991px) {
